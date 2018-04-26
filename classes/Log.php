@@ -3,7 +3,7 @@ class Log
 {
     public static function logWrite($data)
     {
-        $directory = "/log/";
+        $directory = "/logs/";
         $file = date('Y-m-d').".log";
         $path = dirname(__DIR__) . $directory . $file;
         $data = date('H:i:s:u'). " " . $data;
